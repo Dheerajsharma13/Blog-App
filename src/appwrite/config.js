@@ -15,6 +15,7 @@ export class Service {
       }
 
       async createPost ({title, status, content, userId, featuredImage, slug}){
+        console.log('featuredImage', featuredImage)
         try {
             return await this.database.createDocument(
                 conf.appwriteDatabaseId,
@@ -34,7 +35,7 @@ export class Service {
 
       }
 
-      async updatePost(slug , {title, status,content, featuredImage, }){
+      async updatePost(slug , {title, status,content, featuredImage}){
         try {
             return await this.database.updateDocument(
                 conf.appwriteDatabaseId,
