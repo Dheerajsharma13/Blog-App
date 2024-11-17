@@ -16,15 +16,15 @@ import AllPosts from './pages/AllPosts.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Blog-app/",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/Blog-app/",
         element: <Home />,
       },
       {
-        path: "/login",
+        path: "/Blog-app/login",
         element: (
           <AuthLayout authentication={false}>
             <Login />
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/signup",
+        path: "/Blog-app/signup",
         element: (
           <AuthLayout authentication={false}>
              <Signup />
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/add-post",
+        path: "/Blog-app/add-post",
         element: (
             <AuthLayout authentication>
                 {" "}
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         ),
     },
       {
-        path: "/all-posts",
+        path: "/Blog-app/all-posts",
         element: (
           <AuthLayout authentication>
             <AllPosts />
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/edit-post/:slug",
+        path: "/Blog-app/edit-post/:slug",
             element: (
                 <AuthLayout authentication>
                     {" "}
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
             ),
       },
       {
-        path: "/post/:slug",
+        path: "/Blog-app/post/:slug",
         element: <Post />,
     },
     ]

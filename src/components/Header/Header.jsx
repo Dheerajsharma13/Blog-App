@@ -11,27 +11,27 @@ function Header() {
   const navItems = [
     {
       name: 'Home',
-      slug: "/",
+      slug: "/Blog-app/",
       active: true
     }, 
     {
       name: "Login",
-      slug: "/login",
+      slug: "/Blog-app/login",
       active: !authStatus,
   },
   {
       name: "Signup",
-      slug: "/signup",
+      slug: "/Blog-app/signup",
       active: !authStatus,
   },
   {
       name: "All Posts",
-      slug: "/all-posts",
+      slug: "/Blog-app/all-posts",
       active: authStatus,
   },
   {
       name: "Add Post",
-      slug: "/add-post",
+      slug: "/Blog-app/add-post",
       active: authStatus,
   },
   ]
@@ -42,7 +42,7 @@ function Header() {
       <Container>
         <nav className='flex'>
           <div className='mr-4'>
-            <Link to='/'>
+            <Link to='/Blog-app/'>
               <Logo width='70px'   />
 
               </Link>

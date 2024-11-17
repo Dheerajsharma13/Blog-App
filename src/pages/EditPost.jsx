@@ -16,7 +16,7 @@ function EditPost() {
                 }
             })
         } else {
-            navigate('/')
+            navigate('/Blog-app/')
         }
     }, [slug, navigate])
   return post ? (

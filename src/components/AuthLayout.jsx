@@ -20,10 +20,10 @@ export default function Protected ({ children, authentication= true }) {
 
 
     if(authentication && authStatus !== authentication){
-      navigate("/login")
+      navigate("/Blog-app/login")
        
     }else if (!authentication && authStatus !== authentication){
-      navigate("/")
+      navigate("/Blog-app/")
     }
 
     setLoader(false)
